@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Image & Text Generator</title>
+  <link rel="stylesheet" href="Assignment.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>AI Image & Text Generator</h1>
+
+    <!-- Text Workflow -->
+    <section class="card">
+      <h2>Text to Image Workflow</h2>
+      <textarea id="userPrompt" placeholder="Enter your prompt..."></textarea>
+      <button onclick="enhancePrompt()">Enhance Prompt</button>
+      <button onclick="generateImage()">Generate Image</button>
+
+      <h3>Enhanced Prompt:</h3>
+      <p id="enhancedText">No enhanced prompt yet.</p>
+
+      <h3>Generated Image:</h3>
+      <img id="generatedImage" src="" alt="Generated output" />
+    </section>
+
+    <!-- Image Workflow -->
+    <section class="card">
+      <h2>Image Analysis Workflow</h2>
+      <input type="file" id="imageUpload" accept="image/*" />
+      <button onclick="analyzeImage()">Analyze Image</button>
+
+      <h3>Image Analysis Result:</h3>
+      <p id="imageAnalysis">No analysis yet.</p>
+    </section>
+  </div>
+
+  <script src="Assignment.js"></script>
+</body>
+</html>
